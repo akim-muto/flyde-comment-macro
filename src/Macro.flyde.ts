@@ -1,25 +1,19 @@
-import { MacroNode } from "@flyde/core";
-// import parse from 'html-react-parser';
-// import ReactDOMServer from 'react-dom/server';
+import { MacroNode, nodeInput } from "@flyde/core";
 
-export interface CommentConfig {
+export interface Comment2Config {
   content: string;
 }
 
-// const ifr = parse("<Iframe url={'https://www3.nhk.or.jp/news/html/20231007/k10014218571000.html'} width='100px' height='100px' sandbox='allow-same-origin' />")
-// const componentAsString = ReactDOMServer.renderToString(ifr);
-const ifr = 'https://www3.nhk.or.jp/news/html/20231007/k10014218571000.html'
-export const Macro: MacroNode<CommentConfig> = {
-  id: "Macro",
-  displayName: "Macro",
+export const Comment2: MacroNode<Comment2Config> = {
+  id: "Comment2",
+  displayName: "Comment2",
   defaultStyle: {
     icon: "comment",
   },
   description: "A comment node for documentation purposes",
-  runFnBuilder: (config) => {
-    return (inputs, outputs) => {
-      config.content = inputs.in.value
-      outputs.out.next(config.content);
+  runFnBuilder: () => {
+    return () => {
+      // This node does nothing when run
     };
   },
   definitionBuilder: (config) => {
@@ -41,24 +35,16 @@ export const Macro: MacroNode<CommentConfig> = {
       displayName: config.content,
       description: "Comment node",
       inputs: {
-        in: {
-          displayName: "in",
-          description: "in",
-        },
+        never: nodeInput(), // this is a hack to make the node never trigger
       },
-      outputs: {
-        out: {
-          displayName: "out",
-          description: "out",
-        },
-      },
-    }
+      outputs: {},
+    };
   },
   defaultData: {
-    content: ifr
+    content: "abcde",
   },
   editorConfig: {
     type: "custom",
-    editorComponentBundlePath: "../../dist/ui/Macro.js",
+    editorComponentBundlePath: "../dist/ui/Macro.js",
   },
 };

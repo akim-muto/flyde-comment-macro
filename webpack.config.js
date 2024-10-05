@@ -9,6 +9,14 @@ const pairs = [
     entry: "./src/Macro2.tsx",
     name: "Macro2",
   },
+  {
+    entry: "./src/simpleselect.tsx",
+    name: "simpleselect",
+  },
+  {
+    entry: "./src/CodeExpression2.tsx",
+    name: "simpleselect",
+  },
 /*  {
     entry: "./src/lib/Value/InlineValue.tsx",
     name: "InlineValue",

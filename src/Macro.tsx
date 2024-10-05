@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { MacroEditorComp } from "@flyde/core";
-import { CommentConfig } from "./Macro.flyde";
+import { Comment2Config } from "./Macro.flyde";
 import { Callout } from "@blueprintjs/core";
 
-export const MacroEditor: MacroEditorComp<CommentConfig> = ({
+export const MacroEditor: MacroEditorComp<Comment2Config> = ({
   value,
   onChange,
 }) => {
