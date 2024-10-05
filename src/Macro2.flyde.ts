@@ -45,6 +45,6 @@ export const Macro2: MacroNode<InlineValueConfig> = {
   },
   editorConfig: {
     type: "custom",
-    editorComponentBundlePath: "../../dist/ui/Macro2.js",
+    editorComponentBundlePath: "../dist/ui/Macro2.js",
   },
 };

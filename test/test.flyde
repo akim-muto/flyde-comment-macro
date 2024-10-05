@@ -1,0 +1,12 @@
+imports:
+  ..\src\Macro.flyde.ts: []
+  ..\src\simpleselect.flyde.ts: []
+  ..\src\CodeExpression2.flyde.ts: []
+node:
+  instances: []
+  connections: []
+  id: test
+  inputs: {}
+  outputs: {}
+  inputsPosition: {}
+  outputsPosition: {}

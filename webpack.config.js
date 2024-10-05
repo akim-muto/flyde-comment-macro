@@ -2,8 +2,8 @@ const path = require("path");
 
 const pairs = [
    {
-    entry: "./src/Macro.tsx",
-    name: "Macro",
+    entry: "./src/Comment2.tsx",
+    name: "Comment2",
   },
   {
     entry: "./src/Macro2.tsx",
@@ -15,7 +15,7 @@ const pairs = [
   },
   {
     entry: "./src/CodeExpression2.tsx",
-    name: "simpleselect",
+    name: "CodeExpression2",
   },
 /*  {
     entry: "./src/lib/Value/InlineValue.tsx",
