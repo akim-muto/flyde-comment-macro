@@ -2,8 +2,32 @@ imports:
   ..\src\Macro.flyde.ts: []
   ..\src\simpleselect.flyde.ts: []
   ..\src\CodeExpression2.flyde.ts: []
+  ../src/Comment2.flyde.ts:
+    - Comment2
 node:
-  instances: []
+  instances:
+    - pos:
+        x: 337.08000000000004
+        y: 234.57999999999998
+      id: qjrpojoro5lcetsuu6gcgbzj
+      inputConfig: {}
+      nodeId: Comment2__qjrpojoro5lcetsuu6gcgbzj
+      macroId: Comment2
+      macroData:
+        content:
+          type: string
+          value: abcde
+    - pos:
+        x: 103.75
+        y: -202.08
+      id: b3n8f3kfqca073u5rwkprt56
+      inputConfig: {}
+      nodeId: Comment2__b3n8f3kfqca073u5rwkprt56
+      macroId: Comment2
+      macroData:
+        content:
+          type: string
+          value: abcde
   connections: []
   id: test
   inputs: {}

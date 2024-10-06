@@ -45,6 +45,6 @@ export const Comment2: MacroNode<Comment2Config> = {
   },
   editorConfig: {
     type: "custom",
-    editorComponentBundlePath: "../dist/ui/Macro.js",
+    editorComponentBundlePath: "../dist/ui/Comment2.js",
   },
 };
