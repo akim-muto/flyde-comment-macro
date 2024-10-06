@@ -1,7 +1,7 @@
 const path = require("path");
 
 const pairs = [
-   {
+  {
     entry: "./src/Comment2.tsx",
     name: "Comment2",
   },
@@ -17,7 +17,7 @@ const pairs = [
     entry: "./src/CodeExpression2.tsx",
     name: "CodeExpression2",
   },
-/*  {
+  /*  {
     entry: "./src/lib/Value/InlineValue.tsx",
     name: "InlineValue",
   },
@@ -25,15 +25,15 @@ const pairs = [
     entry: "./src/lib/Value/simpleselect.tsx",
     name: "simpleselect",
   }, */
-/*   {
+  /*   {
     entry: "./src/lib/Value/simpleTable.tsx",
     name: "simpleTable",
   }, */
-/*   {
+  /*   {
     entry: "./test/test.ts",
     name: "test",
   }, */
-/*   {
+  /*   {
     entry: "./test/test2.ts",
     name: "test2",
   }, */
@@ -70,11 +70,11 @@ module.exports = pairs.map(({ entry, name }) => ({
       },
     ],
   },
-/*   externals: {
+  externals: {
     // Do not bundle React and ReactDOM, assume they're available externally
     react: "React",
     "react-dom": "ReactDOM",
     "@blueprintjs/core": "Blueprint",
     "@blueprintjs/select": "BlueprintSelect",
-  }, */
+  },
 }));
